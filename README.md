@@ -246,3 +246,4 @@ The **Hospital Analytics – Excel Data Analysis & Dashboard** project demonstra
 The project covers **data organization, Pivot Table analysis, demographic analysis, hospital stay analysis, procedure analysis, medication analysis, and dashboard development**.
 
 This project demonstrates practical skills in **Excel-based data analysis, data visualization, Pivot Tables, dashb**
+<img width="1673" height="618" alt="image" src="https://github.com/user-attachments/assets/cfd1f177-559f-4d23-9ff2-c4fcb32044e2" />
