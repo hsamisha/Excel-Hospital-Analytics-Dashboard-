@@ -1,249 +1,326 @@
-# 🏥 Hospital Analytics – Excel Data Analysis & Dashboard
+# Hospital Analytics - Excel Dashboard
 
-##  Project Overview
+## Project Overview
 
-**Hospital Analytics** is an Excel-based data analysis project designed to analyze hospital patient and encounter data.
+The Hospital Analytics project is an Excel-based data analysis and dashboard project focused on analyzing patient encounters, hospital stay patterns, medical procedures, patient demographics, and readmission-related information.
 
-The project focuses on understanding **patient demographics, hospital stay duration, medical specialties, laboratory procedures, medical procedures, medications, and outpatient visits**.
+The project uses Microsoft Excel to organize, analyze, and visualize hospital data through structured tables, calculations, pivot-based analysis, and dashboard reporting.
 
-Using Microsoft Excel, the raw hospital dataset is organized and analyzed to identify important patterns and provide meaningful insights through tables, calculations, and dashboard-based reporting.
+The analysis provides an overview of patient characteristics, hospital utilization, medical specialties, procedures, medication usage, diagnoses, and readmission patterns.
 
----
+## Objective
 
-##  Project Objectives
+The main objectives of this project are to:
 
-The main objectives of this project are:
+- Analyze hospital patient and encounter data.
+- Understand patient demographic characteristics.
+- Analyze gender and race distribution.
+- Examine patient age groups.
+- Analyze the average duration of hospital stays.
+- Understand medical specialty distribution.
+- Analyze laboratory procedures and other procedures.
+- Examine medication usage patterns.
+- Analyze outpatient, emergency, and inpatient visits.
+- Understand diagnosis-related information.
+- Analyze diabetes medication usage.
+- Examine patient readmission patterns.
+- Present important hospital metrics through an Excel dashboard.
+- Generate meaningful insights from the available hospital data.
 
-* Analyze the total number of patient records.
-* Analyze patient demographics such as gender, race, and age.
-* Understand hospital stay duration.
-* Analyze medical specialties.
-* Examine the number of laboratory procedures.
-* Analyze medical procedures performed.
-* Study medication usage.
-* Analyze outpatient visits.
-* Identify patterns in patient encounters.
-* Create an interactive and easy-to-understand hospital analytics dashboard.
+## Dataset Description
 
----
+The project uses a hospital patient encounter dataset containing information about patient demographics, hospital visits, medical procedures, diagnoses, medications, and readmission status.
 
-##  Dataset
+The main dataset is stored in the `Table1` worksheet.
 
-The project uses a hospital patient encounter dataset containing **48,911 records** in the main `Table1` sheet.
+The dataset contains approximately **48,911 records** and includes 23 columns.
 
-### Important Fields
+### Important Columns
 
-| Field                  | Description                                     |
-| ---------------------- | ----------------------------------------------- |
-| **patient_id**         | Unique patient identifier                       |
-| **encounter_id**       | Unique hospital encounter identifier            |
-| **race**               | Patient race                                    |
-| **gender**             | Patient gender                                  |
-| **age**                | Patient age group                               |
-| **time_in_hospital**   | Number of days spent in the hospital            |
-| **medical_specialty**  | Medical specialty associated with the encounter |
-| **num_lab_procedures** | Number of laboratory procedures                 |
-| **num_procedures**     | Number of medical procedures                    |
-| **num_medications**    | Number of medications                           |
-| **number_outpatient**  | Number of outpatient visits                     |
+| Column | Description |
+|---|---|
+| `encounter_id` | Unique identifier for the hospital encounter |
+| `patient_id` | Unique identifier for the patient |
+| `race` | Race of the patient |
+| `gender` | Gender of the patient |
+| `age` | Age group of the patient |
+| `time_in_hospital` | Number of days spent in the hospital |
+| `medical_specialty` | Medical specialty associated with the encounter |
+| `num_lab_procedures` | Number of laboratory procedures performed |
+| `num_procedures` | Number of procedures performed |
+| `num_medications` | Number of medications used |
+| `number_outpatient` | Number of outpatient visits |
+| `number_emergency` | Number of emergency visits |
+| `number_inpatient` | Number of inpatient visits |
+| `diag_1` | Primary diagnosis |
+| `diag_2` | Secondary diagnosis |
+| `diag_3` | Additional diagnosis |
+| `diag_4` | Additional diagnosis |
+| `diag_5` | Additional diagnosis |
+| `number_diagnoses` | Number of diagnoses recorded |
+| `change` | Change in medication |
+| `diabetesMed` | Indicates diabetes medication usage |
+| `readmitted` | Patient readmission status |
 
----
+## Tools & Technologies Used
 
-## Tools Used
+- Microsoft Excel
+- Excel Tables
+- Pivot Tables
+- Pivot Charts
+- Excel Formulas
+- Data Analysis
+- Data Visualization
+- Interactive Dashboard Design
 
-* **Microsoft Excel**
-* Excel Tables
-* Pivot Tables
-* Pivot Charts
-* Excel Formulas
-* Data Analysis
-* Dashboard Design
-* Interactive Filters / Slicers
+## Approach / Methodology
 
----
+The project was completed through the following stages.
 
-## Project Workflow
+### 1. Data Collection
 
-```text
-Raw Hospital Dataset
-        ↓
-Data Inspection
-        ↓
-Data Organization
-        ↓
-Data Analysis
-        ↓
-Pivot Tables
-        ↓
-Charts & Visualizations
-        ↓
-Dashboard Development
-        ↓
-Hospital Insights
+The hospital patient encounter dataset was loaded into Microsoft Excel for analysis.
 
+### 2. Data Understanding
 
-##  Data Analysis
+The dataset was examined to understand:
 
-The project analyzes different aspects of hospital operations and patient information.
+- Number of records
+- Number of columns
+- Patient identifiers
+- Demographic variables
+- Hospital stay information
+- Medical specialties
+- Procedure-related variables
+- Medication-related variables
+- Diagnosis-related variables
+- Readmission information
+
+### 3. Data Preparation
+
+The dataset was reviewed and prepared for analysis by examining:
+
+- Missing values
+- Unknown values
+- Invalid values
+- Categorical variables
+- Numerical variables
+- Patient age groups
+- Medical specialty information
+- Readmission information
+
+### 4. Data Analysis
+
+The hospital data was analyzed to understand:
+
+- Patient demographics
+- Gender distribution
+- Race distribution
+- Age-group distribution
+- Hospital stay duration
+- Medical specialty distribution
+- Procedure activity
+- Medication usage
+- Hospital visit patterns
+- Diagnosis information
+- Diabetes medication usage
+- Readmission patterns
+
+### 5. Pivot Table Analysis
+
+Pivot tables were used to summarize important hospital metrics and compare patient groups.
+
+The analysis includes summaries related to:
+
+- Patient count
+- Average hospital stay
+- Gender distribution
+- Medical specialties
+- Age groups
+- Race distribution
+- Diabetes medication
+- Readmission-related information
+
+### 6. Dashboard Development
+
+The analyzed data was used to create an Excel dashboard for presenting important hospital metrics and analytical findings.
+
+The dashboard provides a summarized view of the hospital dataset and allows users to understand major patient and hospital utilization patterns.
+
+## Analysis & Key Findings
 
 ### Patient Demographics
 
-The analysis includes:
+The dataset contains patient demographic information including:
 
-* Gender distribution
-* Age-group distribution
-* Race distribution
-* Patient counts
+- Gender
+- Race
+- Age group
+
+The analysis provides an overview of the demographic composition of the patient encounters.
+
+### Gender Analysis
+
+The dataset contains both male and female patient encounters.
+
+The available analysis shows:
+
+- Female encounters: 26,378
+- Male encounters: 22,531
+- Unknown/Invalid: 2
+
+This provides an overview of gender distribution within the analyzed hospital encounters.
+
+### Race Analysis
+
+Race distribution was analyzed to understand the demographic composition of the dataset.
+
+The available data includes:
+
+- Caucasian
+- AfricanAmerican
+- Hispanic
+- Asian
+- Other
+- Unknown values
+
+Caucasian is the largest recorded race group in the dataset.
 
 ### Hospital Stay Analysis
 
-The project examines:
+The average hospital stay in the analyzed dataset is approximately **4.40 days**.
 
-* Average time spent in hospital
-* Distribution of hospital stay duration
-* Patient encounters by length of stay
+Hospital stay duration can be examined across different patient characteristics and medical specialties to understand variations in hospital utilization.
 
-###  Medical Procedure Analysis
+### Medical Specialty Analysis
+
+The dataset contains encounters associated with multiple medical specialties.
+
+The analysis includes specialties such as:
+
+- Internal Medicine
+- Emergency/Trauma
+- Family/General Practice
+- Cardiology
+- Nephrology
+- Orthopedics
+- Surgery-General
+- Radiology
+- Orthopedics-Reconstructive
+
+The dataset also contains encounters where the medical specialty is recorded as Unknown.
+
+### Procedure Analysis
 
 The project analyzes:
 
-* Number of laboratory procedures
-* Number of medical procedures
-* Procedure patterns across patient records
+- Laboratory procedures
+- Other medical procedures
+- Number of diagnoses
 
-###  Medication Analysis
+These metrics provide an understanding of the medical services associated with patient encounters.
 
-The dataset is also analyzed based on:
+### Medication Analysis
 
-* Number of medications
-* Medication patterns across patient encounters
+Medication-related variables were analyzed to understand medication usage patterns.
 
-### 🩺 Medical Specialty Analysis
+The dataset includes:
 
-The project examines patient encounters across different medical specialties.
+- Number of medications
+- Diabetes medication
+- Medication changes
 
-### Outpatient Analysis
+### Hospital Visit Analysis
 
-The project analyzes the number of outpatient visits associated with patient records.
+The dataset includes information about:
 
+- Outpatient visits
+- Emergency visits
+- Inpatient visits
 
+These variables help understand patient utilization of different types of healthcare services.
 
-## Key Metrics
+### Readmission Analysis
 
-The workbook includes calculations such as:
+The `readmitted` field is used to analyze patient readmission patterns.
 
-* **Total Patient Records:** 48,911
-* **Average Time in Hospital:** approximately 4.40 days
-* **Female Encounters:** 26,378
-* **Male Encounters:** 22,531
-* **Unknown/Invalid Gender Records:** 2
+Readmission information can help identify differences in patient outcomes and hospital utilization patterns.
 
-The workbook's analysis/design sheet contains these calculated summaries and pivot-based results.
+## Analysis & Key Insights
 
+Based on the analysis performed in the Excel workbook, the following key insights were identified:
 
+- The dataset contains approximately 48,911 hospital patient encounters.
+- Female encounters account for 26,378 records, while male encounters account for 22,531 records.
+- The average hospital stay is approximately 4.40 days.
+- Caucasian is the largest recorded race group in the dataset.
+- The dataset contains encounters across multiple medical specialties.
+- Internal Medicine has a substantial number of recorded encounters among the listed specialties.
+- Emergency/Trauma and Family/General Practice also account for a considerable number of encounters.
+- The dataset contains a significant number of records where medical specialty information is recorded as Unknown.
+- Patient encounters vary in the number of laboratory procedures, procedures, medications, and diagnoses.
+- Outpatient, emergency, and inpatient visit counts provide additional information about healthcare utilization.
+- Readmission information can be used to further investigate patient outcomes and hospital utilization.
+- Diabetes medication and medication-change information provide additional dimensions for analyzing patient treatment patterns.
 
-## Dashboard
+These findings are based on the available Excel dataset and analysis included in the project.
 
-The project includes a dedicated **Dashboard** sheet designed to present hospital analytics in a visual format.
+## Dashboard Overview
 
-The dashboard can be used to explore:
+The Excel project includes a dashboard designed to present the major hospital analytics findings in a summarized and visual format.
+<img width="1669" height="620" alt="image" src="https://github.com/user-attachments/assets/a1047d32-273c-496b-8a2d-f3a689289e4f" />
 
-* Patient demographics
-* Hospital stay information
-* Medical specialties
-* Procedures
-* Medication-related information
-* Patient encounter patterns
+The dashboard focuses on important areas such as:
 
-Interactive Excel features such as Pivot Tables, Pivot Charts, and slicers can be used to filter and explore the data.
+- Total Patient Encounters
+- Average Time in Hospital
+- Gender Distribution
+- Patient Demographics
+- Race Distribution
+- Age Distribution
+- Medical Specialty
+- Hospital Visit Patterns
+- Medication Usage
+- Readmission Analysis
 
+The dashboard provides a consolidated view of the hospital data and helps users explore important patient and hospital utilization patterns.
 
+## Key Performance Indicators
 
-## Excel Workbook Structure
+The project focuses on important hospital KPIs such as:
 
+| KPI | Description |
+|---|---|
+| Total Patient Encounters | Total number of hospital encounters analyzed |
+| Average Time in Hospital | Average number of days patients stayed in the hospital |
+| Female Encounters | Number of encounters associated with female patients |
+| Male Encounters | Number of encounters associated with male patients |
+| Total Procedures | Number of procedures associated with patient encounters |
+| Total Lab Procedures | Number of laboratory procedures recorded |
+| Total Medications | Number of medications recorded across encounters |
+| Readmission | Patient readmission status and related analysis |
 
-Hospital Analytics Excel Project
-│
-├── Table1
-│   └── Main hospital patient & encounter dataset
-│
-├── design
-│   └── Analysis calculations and Pivot Table summaries
-│
-└── dashboard
-    └── Hospital analytics dashboard
-```
+## Recommendations
 
----
+Based on the analysis performed, the following recommendations can be considered:
 
-## Key Questions Answered
-
-The project helps answer questions such as:
-
-* How many patient encounters are present in the dataset?
-* What is the gender distribution of patients?
-* Which age groups are most represented?
-* What is the average hospital stay?
-* Which medical specialties have more patient encounters?
-* How many laboratory procedures are performed?
-* How many medical procedures are performed?
-* What is the distribution of medication usage?
-* How many outpatient visits are recorded?
-* What patterns can be identified from patient encounter data?
-
----
-
-## Key Insights
-
-The analysis provides a structured view of hospital patient and encounter data.
-
-It helps understand:
-
-* Patient demographic patterns
-* Hospital utilization
-* Average length of stay
-* Medical procedure activity
-* Medication usage
-* Medical specialty distribution
-* Outpatient visit patterns
-
-These insights can support better understanding of hospital operations and patient characteristics.
-
-
-
-##  How to Use the Project
-
-### Step 1: Open the Excel File
-
-Open:
-
-```text
-Hospital_Analytics_excel_Project1.xlsx
-```
-
-### Step 2: Explore the Dataset
-
-Go to the **Table1** sheet to view the main hospital dataset.
-
-### Step 3: Review the Analysis
-
-Open the **design** sheet to view calculated summaries and Pivot Table analysis.
-
-### Step 4: View the Dashboard
-
-Open the **dashboard** sheet to explore the visual presentation of the analysis.
-
-### Step 5: Interact With the Dashboard
-
-Use available Excel filters, Pivot Tables, charts, and slicers to explore different aspects of the hospital data.
-
----
+- Monitor hospital stay duration across different patient groups and specialties.
+- Analyze medical specialty workload to understand hospital service utilization.
+- Monitor readmission patterns to identify areas requiring further investigation.
+- Examine emergency, inpatient, and outpatient visit patterns for better resource planning.
+- Monitor procedure and laboratory activity to understand healthcare service utilization.
+- Analyze medication usage and medication changes across patient groups.
+- Improve the completeness of medical specialty and demographic information where Unknown or missing values occur.
+- Use demographic and hospital utilization patterns to support healthcare resource planning.
+- Continue monitoring patient encounter and readmission trends using regularly updated data.
 
 ## Conclusion
 
-The **Hospital Analytics – Excel Data Analysis & Dashboard** project demonstrates how Excel can be used to transform hospital patient and encounter data into meaningful analytical information.
+The Hospital Analytics Excel project demonstrates how Microsoft Excel can be used to analyze healthcare data and create meaningful analytical insights.
 
-The project covers **data organization, Pivot Table analysis, demographic analysis, hospital stay analysis, procedure analysis, medication analysis, and dashboard development**.
+The project covers patient demographics, hospital stay duration, medical specialties, procedures, medications, hospital visits, diagnoses, and readmission information.
 
-This project demonstrates practical skills in **Excel-based data analysis, data visualization, Pivot Tables, dashb**
-<img width="1673" height="618" alt="image" src="https://github.com/user-attachments/assets/cfd1f177-559f-4d23-9ff2-c4fcb32044e2" />
+Using Excel tables, pivot-based analysis, calculations, and dashboard visualization, the project transforms hospital encounter data into an understandable analytical report.
+
+Overall, the project demonstrates practical skills in Excel-based data cleaning, data analysis, pivot table analysis, KPI development, data visualization, and dashboard creation.
+
